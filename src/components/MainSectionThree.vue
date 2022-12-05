@@ -12,8 +12,8 @@
         <button class="btn btn-primary">Explore Mofre Features</button>
       </div>
     </div>
-    <div class="row row-cols-4 d-flex justify-content-center
-    align-items-center p-2 m-0 gap-4">
+    <div class="cards-container row row-cols-4 d-flex justify-content-center
+    align-items-center p-2 m-0 gap-3">
       <FeatureCard
       v-for="item in arrData"
         :key="item.cardTitle"
@@ -74,13 +74,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.bg_img {
-  position: relative;
-  top:0;
-  left: -50%;
+.container-fluid {
+  background-image: url('../img/14.png');
+  background-repeat: no-repeat;
+  background-position-x: -10%;
+  background-size: 30rem;
+  height: 30rem;
 }
 h1 {
   font-weight: 400;
   font-size: 2rem;
+}
+.cards-container {
+  max-width: 64rem;
+  height: 18rem;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 0 5rem rgb(240, 240, 240);
 }
 </style>

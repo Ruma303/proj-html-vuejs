@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'MainSectionOne',
+  name: 'MainSectionTwo',
   data() {
     return {
       arrData: [

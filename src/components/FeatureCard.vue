@@ -19,6 +19,9 @@ export default {
 <style lang="scss" scoped>
 .container-card {
   max-width: 15rem;
-  height: 5rem;
+  height: 8rem;
+  h5 {
+    font-size: 1rem;
+  }
 }
 </style>
