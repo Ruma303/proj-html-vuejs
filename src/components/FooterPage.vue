@@ -14,33 +14,27 @@
     justify-content-around align-items-start col">
     <ul>
       <h5>Menu</h5>
-      <li class="text-secondary">About Us</li>
-      <li class="text-secondary">Theme</li>
-      <li class="text-secondary">Features</li>
-      <li class="text-secondary">Pricing</li>
-      <li class="text-secondary">Blog</li>
+      <li class="text-secondary"
+      v-for="item in arrMenu"
+      :key="item">{{item}}</li>
     </ul>
   </div>
   <div class="footer-div d-flex flex-column
     justify-content-around align-items-start col">
     <ul>
       <h5>About Us</h5>
-      <li class="text-secondary">About SoftBox</li>
-      <li class="text-secondary">Roadmap</li>
-      <li class="text-secondary">How it Work</li>
-      <li class="text-secondary">Team</li>
-      <li class="text-secondary">News</li>
+      <li class="text-secondary"
+      v-for="item in arrAboutUs"
+      :key="item">{{item}}</li>
     </ul>
   </div>
   <div class="footer-div d-flex flex-column
     justify-content-around align-items-start col">
     <ul>
       <h5>Quick Links</h5>
-      <li class="text-secondary">About Us</li>
-      <li class="text-secondary">Theme</li>
-      <li class="text-secondary">Features</li>
-      <li class="text-secondary">Pricing</li>
-      <li class="text-secondary">Blog</li>
+      <li class="text-secondary"
+      v-for="item in arrMenu"
+      :key="item">{{item}}</li>
     </ul>
   </div>
   </div>
@@ -49,6 +43,12 @@
 <script>
 export default {
   name: 'FooterPage',
+  data() {
+    return {
+      arrMenu: ['About us', 'Theme', 'Features', 'Pricing', 'Blog'],
+      arrAboutUs: ['About SoftBox', 'Roadmap', 'How it Work', 'Team', 'News'],
+    };
+  },
 };
 </script>
 

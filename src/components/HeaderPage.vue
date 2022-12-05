@@ -4,11 +4,9 @@
     justify-content-around align-items-center m-0 p-0">
       <img src="../img/logo-2.png" alt="" id="header-logo">
       <ul class="d-flex justify-content-around align-items-center gap-4">
-        <li class="header-link">Home</li>
-        <li class="header-link">About us</li>
-        <li class="header-link">Feature</li>
-        <li class="header-link">Testimonials</li>
-        <li class="header-link">Contact US</li>
+        <li class="header-link"
+        v-for="link in navLinks"
+        :key="link">{{link}}</li>
         <span class="header-ico d-flex justify-content-around
         align-items-center gap-4">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="header-link"/>
@@ -40,6 +38,11 @@
 <script>
 export default {
   name: 'HeaderPage',
+  data() {
+    return {
+      navLinks: ['Home', 'About us', 'Feature', 'Testimonials', 'Contact US'],
+    };
+  },
 };
 </script>
 
