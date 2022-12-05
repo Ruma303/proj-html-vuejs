@@ -11,7 +11,7 @@
       <div class="bottom-container d-flex"
       v-for="item in arrData"
       :key="item.src">
-      <img :src="`../img/${item.src}.png`" alt="">
+      <!-- <img :src="`../img/${item.src}.png`" alt=""> -->
       <div>
         <h5>{{item.title}}</h5>
         <p class="text-secondary">{{item.paragraph}}</p>
