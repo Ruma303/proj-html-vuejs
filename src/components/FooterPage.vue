@@ -5,8 +5,8 @@
     justify-content-around align-items-start">
     <div class="sub-div-top">
       <img src="../img/35.png" alt="">
-      <p class="text-secondary">It is a long established fact that a reader will be distracted
-        by the readable content.</p>
+      <p class="text-secondary">
+        It is a long established fact that a reader will be distracted by the readable content.</p>
     </div>
     <span class="text-secondary">Copyright @ 2018 <span class="text-primary">Softbox</span></span>
   </div>

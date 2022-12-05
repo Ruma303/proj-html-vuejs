@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'onlineMarketing',
+  name: 'MainSectionOne',
   data() {
     return {
       arrMarketing: ['SEO', 'SEM', 'Website Strategies', 'Social management'],
