@@ -19,7 +19,20 @@
     </nav>
     <div class="header-bottom container-fluid d-flex
     justify-content-center align-items-center mx-auto p-0">
-
+    <div class="header-jumbo container d-flex
+    justify-content-around align-items-center">
+      <div class="jumbo-left d-flex flex-column
+        justify-content-between align-items-start m-auto my-0 px-3 gap-4">
+        <h1>The biggest platform for your growth</h1>
+        <p>There are many variations of passages of Lorem Ipsum
+          aviable, but the majority suffered alternation in some
+          form</p>
+        <button class="btn btn-primary">Read More</button>
+      </div>
+      <div class="jumbo-right">
+        <img src="../img/27-1.png" alt="" id="jumbo-img">
+      </div>
+    </div>
     </div>
   </div>
 </template>
@@ -39,6 +52,9 @@ export default {
 .header-top {
   background-color: white;
   height: 5rem;
+  #header-logo {
+    width: 3rem;
+  }
   & li:hover,
   .header-ico svg:hover {
     color: blue;
@@ -48,11 +64,24 @@ export default {
     font-size: 1.2rem;
   }
 }
-#header-logo {
-  width: 3rem;
-}
 .header-bottom {
-  background-color: blue;
-  height: 20rem;
+  // height: 20rem;
+  .header-jumbo{
+    background-color:rgb(241, 246, 255);
+    @include full-size;
+  }
+  #jumbo-img{
+    position: relative;
+    top: 2.5rem;
+  }
+  h1 {
+    line-height: 3.5rem;
+    font-weight: 400;
+    font-size: 3rem;
+  }
+  p {
+    color: rgb(143, 153, 160);
+    font-size: 1rem;
+  }
 }
 </style>
