@@ -53,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sec4-container {
+.sec5-container {
   height: 30rem;
 }
 #title {

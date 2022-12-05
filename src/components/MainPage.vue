@@ -18,11 +18,11 @@
     mx-auto my-5">
       <MainSectionFour />
     </section>
-    <section class="section4 d-flex justify-content-center align-items-center container-fluid p-0
+    <section class="section5 d-flex justify-content-center align-items-center container-fluid p-0
     mx-auto my-5">
       <MainSectionFive />
     </section>
-    <section class="section4 d-flex justify-content-center align-items-center container-fluid p-0
+    <section class="section6 d-flex justify-content-center align-items-center container-fluid p-0
     mx-auto my-5">
       <MainSectionSix />
     </section>
