@@ -59,6 +59,7 @@ export default {
 .sec4-container {
   background-image: url('../img/15.png');
   background-repeat: no-repeat;
+  background-size: 100vw;
   height: 30rem;
 }
 #title {
@@ -69,5 +70,6 @@ export default {
   padding: 1rem;
   background-color: rgb(240, 240, 240);
   box-shadow: 5px 5px 5rem rgb(240, 240, 240);
+  margin-top: 5rem;
 }
 </style>

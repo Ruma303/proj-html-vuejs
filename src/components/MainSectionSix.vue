@@ -7,8 +7,6 @@
     align-items-start gap-4 mt-5">
       <div class="map-jumbo d-flex flex-column">
         <img src="../img/StaticMapService.GetMapIma.png" alt="">
-        <!-- {{cose}} -->
-        Prova a stampare il messaggio qua
       </div>
       <div class="contact-div d-flex flex-column justify-content-start
       align-items-start">
@@ -84,15 +82,21 @@ form {
   input.half-col {
     width: 10rem;
     padding: .3rem;
+    border: 1px solid lightblue;
   }
   input.full-col,
   textarea.full-col {
     width: 21rem;
     padding: .3rem;
+    border: 1px solid lightblue;
   }
   .send-button {
     width: fit-content;
     white-space: nowrap;
+    &:hover {
+    color: white;
+    background-color: black;
+    }
   }
 }
 </style>
