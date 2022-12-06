@@ -29,25 +29,31 @@ export default {
     return {
       arrData: [
         {
-          src: '18',
-          title: 'Life Lack Meaning',
-          paragraph: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-          date: 'DATA DI PROVA',
-        },
-        {
           src: '19',
           title: 'Life Lack Meaning',
           paragraph: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-          date: '',
+          date: 'November 28, 2019',
+        },
+        {
+          src: '18',
+          title: 'Life Lack Meaning',
+          paragraph: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+          date: 'November 28, 2019',
         },
         {
           src: '17',
           title: 'Life Lack Meaning',
           paragraph: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-          date: '',
+          date: 'November 28, 2019',
         },
       ],
     };
+  },
+  methods: {
+    getDate() {
+      this.date.now().setZone('Rome').minus({ weeks: 1 }).endOf('day')
+        .toISO();
+    },
   },
 };
 </script>
@@ -55,6 +61,7 @@ export default {
 <style lang="scss" scoped>
 .sec5-container {
   height: 30rem;
+  margin: 8rem 0;
 }
 #title {
   font-weight: 400;

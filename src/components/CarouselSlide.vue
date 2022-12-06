@@ -15,9 +15,9 @@
     </div>
     <div class="dots d-flex gap-2 mt-2">
       <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
-      @click="Left()"/>
+      @click="Left()" :class="{color}"/>
       <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
-      @click="Right()"/>
+      @click="Right()" :class="{color}"/>
     </div>
   </div>
 </template>
@@ -40,6 +40,7 @@ export default {
   data() {
     return {
       activeindex: 0,
+      color: 'black',
     };
   },
   methods: {
@@ -60,5 +61,11 @@ export default {
 <style lang="scss" scoped>
 .single-dot {
   cursor:pointer;
+}
+.black {
+  color:black;
+}
+.blue {
+  color:blue;
 }
 </style>

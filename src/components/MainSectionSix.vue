@@ -7,6 +7,14 @@
     align-items-start gap-4 mt-5">
       <div class="map-jumbo d-flex flex-column">
         <img src="../img/StaticMapService.GetMapIma.png" alt="">
+        <h5 v-if="nameStr.length">Il tuo nome è: <span class="text-secondary">
+          {{nameStr}}</span></h5>
+        <h5 v-if="emailStr.length">La tua mail è: <span class="text-secondary">
+          {{emailStr}}</span></h5>
+        <h5 v-if="subjectStr.length">Oggetto: <span class="text-secondary">
+          {{subjectStr}}</span></h5>
+        <h5 v-if="messageStr.length">Il tuo messaggio: <span class="text-secondary">
+          {{messageStr}}</span></h5>
       </div>
       <div class="contact-div d-flex flex-column justify-content-start
       align-items-start">
@@ -22,7 +30,8 @@
         </div>
         <div>
           <h3 id="form-title">Get in Touch</h3>
-          <form class="mt-5 d-flex flex-column gap-4 justify-content-center
+          <form @submit.prevent="nameStr,emailStr,subjectStr, messageStr"
+          class="mt-5 d-flex flex-column gap-4 justify-content-center
             align-items-star">
             <div class="first-col p-0 d-flex gap-3">
               <label for="name" class="p-0">
@@ -52,6 +61,14 @@
 <script>
 export default {
   name: 'MainSectionSix',
+  data() {
+    return {
+      nameStr: '',
+      emailStr: '',
+      subjectStr: '',
+      messageStr: '',
+    };
+  },
 };
 </script>
 

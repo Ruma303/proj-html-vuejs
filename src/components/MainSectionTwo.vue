@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <img src="../img/509.jpeg" alt="">
+    <img src="../img/509.jpeg" alt="" class="jumbo">
   </div>
 </template>
 
@@ -54,8 +54,13 @@ export default {
     font-size: 1rem;
   }
   .bottom-container img {
-    width: 100%;
-    height: 100%;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 3rem;
   }
+}
+.jumbo{
+  width: 50%;
+  height: 50%;
 }
 </style>
