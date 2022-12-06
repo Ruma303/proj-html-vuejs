@@ -1,6 +1,6 @@
 <template>
-  <div class="card testimonial-card" style="width: 18rem;">
-    <img class="card-img-top rounded-cirle" :src="src" alt="">
+  <div class="card testimonial-card">
+    <img class="card-img-top rounded-circle image" :src="src" alt="">
     <div class="card-body">
       <span class="card-title h5">{{name}}</span>
       <span class="text-secondary"> - {{profession}}</span>
@@ -22,4 +22,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.testimonial-card{
+  width: 20rem;
+  height: 25rem;
+  .image{
+    width: 5rem;
+    padding-top: 1rem;
+  }
+}
 </style>

@@ -8,13 +8,6 @@
     <CarouselSlide
     :arrData="arrData"
     />
-
-    <div class="dots d-flex gap-2 mt-2">
-      <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
-      @click="Left()"/>
-      <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
-      @click="Right()"/>
-    </div>
   </div>
 </template>
 
@@ -59,6 +52,7 @@ export default {
   background-repeat: no-repeat;
   background-size: 100vw;
   height: 30rem;
+  margin: 8rem 0;
 }
 #title {
   font-weight: 400;
@@ -67,7 +61,7 @@ export default {
 .cards-container {
   padding: 1rem;
   background-color: rgb(240, 240, 240);
-  box-shadow: 5px 5px 5rem rgb(240, 240, 240);
+  box-shadow:  0 0 20px rgb(240, 240, 240);
   margin-top: 5rem;
 }
 </style>

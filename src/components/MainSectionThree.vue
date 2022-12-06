@@ -81,6 +81,7 @@ export default {
   background-position-x: -10%;
   background-size: 30rem;
   height: 30rem;
+  margin: 8rem 0;
 }
 h1 {
   font-weight: 400;

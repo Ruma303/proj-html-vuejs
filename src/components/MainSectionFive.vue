@@ -9,7 +9,7 @@
       :key="item.src"
       :title="item.title"
       :paragraph="item.paragraph"
-      :src="`../img/${item.src}.jpg`"
+      :src="`/img/${item.src}.jpg`"
       :date="item.date"
       class="lastpost-card"
       />
