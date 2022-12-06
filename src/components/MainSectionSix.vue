@@ -24,26 +24,26 @@
         </div>
         <div>
           <h3 id="form-title">Get in Touch</h3>
-          <form class="mt-5 d-flex row row-cols flex-column gap-4 justify-content-center
+          <form class="mt-5 d-flex flex-column gap-4 justify-content-center
             align-items-star">
-            <div class="first-col row row-cols-2 px-0">
-              <label for="name" class="col px-0">
-                <input type="text" id="name" placeholder="Your Name" class="rounded px-3 py-1">
+            <div class="first-col p-0 d-flex gap-3">
+              <label for="name" class="p-0">
+                <input type="text" id="name" placeholder="Your Name" class="rounded half-col">
               </label>
-              <label for="email" class="col px-0">
-                <input type="email" id="email" placeholder="Your Email" class="rounded px-3 py-1">
+              <label for="email" class="p-0">
+                <input type="email" id="email" placeholder="Your Email" class="rounded half-col">
               </label>
             </div>
-            <label for="object" class="row p-0">
-              <input type="text" id="object" placeholder="Your Subject" class="rounded px-3 py-1
-              col">
+            <label for="object" class="p-0">
+              <input type="text" id="object" placeholder="Your Subject" class="rounded
+              full-col">
             </label>
-            <label for="text-area" class="row p-0">
-              <textarea id="text-area" class="row rounded px-3 py-1 m-0 col"
-               placeholder="Your Message">
+            <label for="text-area" class="p-0">
+              <textarea id="text-area" class="rounded m-0 full-col"
+               placeholder="Your Message" rows="5">
               </textarea>
             </label>
-            <button class="btn btn-primary send-button col-4">Send Message</button>
+            <button class="btn btn-primary send-button">Send Message</button>
           </form>
         </div>
       </div>
@@ -80,7 +80,19 @@ export default {
   font-weight: 400;
   font-size: 1.8rem;
 }
-#send-button {
-  width: fit-content;
+form {
+  input.half-col {
+    width: 10rem;
+    padding: .3rem;
+  }
+  input.full-col,
+  textarea.full-col {
+    width: 21rem;
+    padding: .3rem;
+  }
+  .send-button {
+    width: fit-content;
+    white-space: nowrap;
+  }
 }
 </style>
