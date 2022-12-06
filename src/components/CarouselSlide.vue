@@ -1,15 +1,18 @@
 <template>
-<div class="cards-container d-flex gap-3">
-    <TestimonialCard
-    v-show="( i === activeindex|| i === activeindex+1)"
-    v-for="(tizio, i) in arrData"
-    :key="tizio.src"
-    :name="tizio.name"
-    :profession="tizio.profession"
-    :quote="tizio.quote"
-    :src="`../img/${tizio.src}.jpeg`"
-    class="testimonial-card"
-    />
+  <div class="cards-container d-flex flex-column gap-3 justify-content-center
+  align-items-center">
+    <div class="cards d-flex gap-5">
+      <TestimonialCard
+      v-show="( i === activeindex|| i === activeindex+1)"
+      v-for="(tizio, i) in arrData"
+      :key="tizio.src"
+      :name="tizio.name"
+      :profession="tizio.profession"
+      :quote="tizio.quote"
+      :src="`../img/${tizio.src}.jpeg`"
+      class="testimonial-card"
+      />
+    </div>
     <div class="dots d-flex gap-2 mt-2">
       <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
       @click="Left()"/>
@@ -41,15 +44,21 @@ export default {
   },
   methods: {
     Right() {
-      this.activeindex += 1;
+      if (this.activeindex !== 1) {
+        this.activeindex += 1;
+      }
     },
     Left() {
-      this.activeindex -= 1;
+      if (this.activeindex !== 0) {
+        this.activeindex -= 1;
+      }
     },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
+.single-dot {
+  cursor:pointer;
+}
 </style>
