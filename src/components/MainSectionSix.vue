@@ -7,14 +7,16 @@
     align-items-start gap-4 mt-5">
       <div class="map-jumbo d-flex flex-column">
         <img src="../img/map.png" alt="">
-        <h5 v-if="nameStr.length">Il tuo nome è: <span class="text-secondary">
-          {{nameStr}}</span></h5>
-        <h5 v-if="emailStr.length">La tua mail è: <span class="text-secondary">
-          {{emailStr}}</span></h5>
-        <h5 v-if="subjectStr.length">Oggetto: <span class="text-secondary">
-          {{subjectStr}}</span></h5>
-        <h5 v-if="messageStr.length">Il tuo messaggio: <span class="text-secondary">
-          {{messageStr}}</span></h5>
+        <div class="output">
+          <h5 v-if="nameStr.length">Il tuo nome è: <span class="text-secondary">
+            {{nameStr}}</span></h5>
+          <h5 v-if="emailStr.length">La tua mail è: <span class="text-secondary">
+            {{emailStr}}</span></h5>
+          <h5 v-if="subjectStr.length">Oggetto: <span class="text-secondary">
+            {{subjectStr}}</span></h5>
+          <h5 v-if="messageStr.length">Il tuo messaggio: <span class="text-secondary">
+            {{messageStr}}</span></h5>
+        </div>
       </div>
       <div class="contact-div d-flex flex-column justify-content-start
       align-items-start">
@@ -30,27 +32,31 @@
         </div>
         <div>
           <h3 id="form-title">Get in Touch</h3>
-          <form @submit.prevent="nameStr,emailStr,subjectStr, messageStr"
+          <form @submit.prevent="print"
           class="mt-5 d-flex flex-column gap-4 justify-content-center
             align-items-star">
             <div class="first-col p-0 d-flex gap-3">
               <label for="name" class="p-0">
-                <input type="text" id="name" placeholder="Your Name" class="rounded half-col">
+                <input type="text" id="name" placeholder="Your Name" class="rounded half-col"
+                v-model="nameStr">
               </label>
               <label for="email" class="p-0">
-                <input type="email" id="email" placeholder="Your Email" class="rounded half-col">
+                <input type="email" id="email" placeholder="Your Email" class="rounded half-col"
+                v-model="emailStr">
               </label>
             </div>
             <label for="object" class="p-0">
               <input type="text" id="object" placeholder="Your Subject" class="rounded
-              full-col">
+              full-col"
+              v-model="subjectStr">
             </label>
             <label for="text-area" class="p-0">
               <textarea id="text-area" class="rounded m-0 full-col"
-               placeholder="Your Message" rows="5">
+               placeholder="Your Message" rows="5"
+               v-model="messageStr">
               </textarea>
             </label>
-            <button class="btn btn-primary send-button">Send Message</button>
+            <button class="btn btn-primary send-button" type="submit">Send Message</button>
           </form>
         </div>
       </div>
@@ -69,16 +75,24 @@ export default {
       messageStr: '',
     };
   },
+  methods: {
+    print() {
+      console.log(this.nameStr, this.emailStr, this.subjectStr, this.messageStr);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .sec6-container {
   height: 50rem;
+  .map-jumbo {
+    max-width: 35rem;
+    overflow-wrap: break-word;
+  }
   .map-jumbo img {
-    scale: 120%;
-    position: relative;
-    top: 2rem;
+    width: 35rem;
+    margin-bottom: 1rem;
   }
 }
 #title {

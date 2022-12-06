@@ -3,8 +3,8 @@
   align-items-center">
     <div class="cards d-flex gap-5">
       <TestimonialCard
-      v-show="( i === activeindex|| i === activeindex+1)"
       v-for="(tizio, i) in arrData"
+      v-show="( i === activeindex || i === activeindex +1 )"
       :key="tizio.src"
       :name="tizio.name"
       :profession="tizio.profession"
@@ -15,9 +15,9 @@
     </div>
     <div class="dots d-flex gap-2 mt-2">
       <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
-      @click="Left()" :class="{color}"/>
+      @click="Left()"/>
       <font-awesome-icon icon="fa-solid fa-circle" class="single-dot"
-      @click="Right()" :class="{color}"/>
+      @click="Right()"/>
     </div>
   </div>
 </template>
