@@ -9,13 +9,13 @@
         </p>
       </div>
       <div class="bottom-container d-flex"
-      v-for="item in arrData"
-      :key="item.src">
-      <!-- <img :src="`../img/${item.src}.png`" alt=""> -->
-      <div>
-        <h5>{{item.title}}</h5>
-        <p class="text-secondary">{{item.paragraph}}</p>
-      </div>
+        v-for="item in arrData"
+        :key="item.title">
+        <img :src="item.src" alt="">
+        <div>
+          <h5>{{item.title}}</h5>
+          <p class="text-secondary">{{item.paragraph}}</p>
+        </div>
       </div>
     </div>
     <img src="../img/509.jpeg" alt="">
@@ -29,12 +29,12 @@ export default {
     return {
       arrData: [
         {
-          src: '510',
+          src: '../img/510.png',
           title: 'Reporting Analysis',
           paragraph: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
         },
         {
-          src: '511',
+          src: '../img/511.png',
           title: 'Technical SEO Audit',
           paragraph: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
         },
@@ -54,7 +54,8 @@ export default {
     font-size: 1rem;
   }
   .bottom-container img {
-    width: 3rem;
+    width: 100%;
+    height: 100%;
   }
 }
 </style>

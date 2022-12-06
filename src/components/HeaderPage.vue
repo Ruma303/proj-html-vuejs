@@ -12,7 +12,7 @@
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="header-link"/>
           <font-awesome-icon icon="fa-solid fa-cart-shopping" class="header-link"/>
         </span>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-primary" id="start-button">Get Started</button>
       </ul>
     </nav>
     <div class="header-bottom container-fluid d-flex
@@ -25,7 +25,7 @@
         <p>There are many variations of passages of Lorem Ipsum
           aviable, but the majority suffered alternation in some
           form</p>
-        <button class="btn btn-primary" id='read-button'>Read More</button>
+        <button class="btn btn-primary" id="read-button">Read More</button>
       </div>
       <div class="jumbo-right">
         <img src="../img/27-1.png" alt="" id="jumbo-img">
@@ -51,6 +51,11 @@ export default {
 @mixin full-size {
   height: 100%;
   width: 100%;
+}
+#read-button:hover,
+#start-button:hover {
+  color: white;
+  background-color: black;
 }
 .header-top {
   background-color: white;
@@ -84,10 +89,6 @@ export default {
   p {
     color: rgb(143, 153, 160);
     font-size: 1rem;
-  }
-  #read-button:hover {
-    color: white;
-    background-color: black;
   }
 }
 </style>
