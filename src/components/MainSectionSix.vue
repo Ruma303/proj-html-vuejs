@@ -6,7 +6,7 @@
     <div class="middle-div d-flex justify-content-start
     align-items-start gap-4 mt-5">
       <div class="map-jumbo d-flex flex-column">
-        <img src="../img/StaticMapService.GetMapIma.png" alt="">
+        <img src="../img/map.png" alt="">
         <h5 v-if="nameStr.length">Il tuo nome è: <span class="text-secondary">
           {{nameStr}}</span></h5>
         <h5 v-if="emailStr.length">La tua mail è: <span class="text-secondary">
@@ -75,6 +75,11 @@ export default {
 <style lang="scss" scoped>
 .sec6-container {
   height: 50rem;
+  .map-jumbo img {
+    scale: 120%;
+    position: relative;
+    top: 2rem;
+  }
 }
 #title {
   font-weight: 400;
