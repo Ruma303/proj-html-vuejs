@@ -56,7 +56,8 @@
                v-model="messageStr">
               </textarea>
             </label>
-            <button class="btn btn-primary send-button" type="submit">Send Message</button>
+            <button class="btn btn-primary send-button" type="submit">
+              Send Message</button>
           </form>
         </div>
       </div>

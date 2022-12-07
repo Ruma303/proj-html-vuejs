@@ -18,7 +18,7 @@
       v-for="item in arrData"
         :key="item.cardTitle"
         :cardTitle="item.cardTitle"
-        :src="item.src"
+        :icon="item.icon"
         class="single-card"
         />
     </div>
@@ -38,35 +38,35 @@ export default {
       arrData: [
         {
           cardTitle: 'Customized invoices',
-          src: '',
+          icon: 'fa-chart-bar',
         },
         {
           cardTitle: 'Stock Management',
-          src: '',
+          icon: 'fa-paper-plane',
         },
         {
           cardTitle: 'Receivable & Payables',
-          src: '',
+          icon: 'fa-user',
         },
         {
           cardTitle: 'Manage Buying',
-          src: '',
+          icon: 'fa-chart-bar',
         },
         {
           cardTitle: 'Powerful & Secure',
-          src: '',
+          icon: 'fa-paper-plane',
         },
         {
           cardTitle: 'Fastest Return Filing',
-          src: '',
+          icon: 'fa-user',
         },
         {
           cardTitle: 'Monthly Detailed',
-          src: '',
+          icon: 'fa-paper-plane',
         },
         {
           cardTitle: 'Product Management',
-          src: '',
+          icon: 'fa-chart-bar',
         },
       ],
     };

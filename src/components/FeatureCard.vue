@@ -2,7 +2,8 @@
   <div class="container-card d-flex flex-column align-items-start
   card justify-content-center">
     <h5 class="m-0">{{cardTitle}}</h5>
-    <!-- <img :src="src" alt=""> -->
+    <font-awesome-icon icon="fa-regular ${icon}" />
+    {{icon}}
   </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   name: 'FeatureCard',
   props: {
     cardTitle: String,
-    src: String,
+    icon: String,
   },
 };
 </script>

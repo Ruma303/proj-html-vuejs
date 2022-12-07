@@ -6,6 +6,9 @@ import {
 import {
   faFacebookF, faTwitter, faGithub, faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import {
+  faChartBar, faPaperPlane, faUser,
+} from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
 
@@ -19,6 +22,9 @@ library.add(
   faGithub,
   faInstagram,
   faCircle,
+  faChartBar,
+  faPaperPlane,
+  faUser,
 );
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
