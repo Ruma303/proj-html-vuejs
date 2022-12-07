@@ -49,12 +49,6 @@ export default {
       ],
     };
   },
-  methods: {
-    getDate() {
-      this.date.now().setZone('Rome').minus({ weeks: 1 }).endOf('day')
-        .toISO();
-    },
-  },
 };
 </script>
 

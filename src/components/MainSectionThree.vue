@@ -19,6 +19,7 @@
         :key="item.cardTitle"
         :cardTitle="item.cardTitle"
         :icon="item.icon"
+        :color="item.color"
         class="single-card"
         />
     </div>
@@ -39,34 +40,42 @@ export default {
         {
           cardTitle: 'Customized invoices',
           icon: 'fa-chart-bar',
+          color: 'blue',
         },
         {
           cardTitle: 'Stock Management',
           icon: 'fa-paper-plane',
+          color: 'salmon',
         },
         {
           cardTitle: 'Receivable & Payables',
           icon: 'fa-user',
+          color: 'green',
         },
         {
           cardTitle: 'Manage Buying',
           icon: 'fa-chart-bar',
+          color: 'blue',
         },
         {
           cardTitle: 'Powerful & Secure',
           icon: 'fa-paper-plane',
+          color: 'salmon',
         },
         {
           cardTitle: 'Fastest Return Filing',
           icon: 'fa-user',
+          color: 'green',
         },
         {
           cardTitle: 'Monthly Detailed',
           icon: 'fa-paper-plane',
+          color: 'salmon',
         },
         {
           cardTitle: 'Product Management',
           icon: 'fa-chart-bar',
+          color: 'blue',
         },
       ],
     };

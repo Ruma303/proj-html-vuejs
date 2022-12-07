@@ -8,14 +8,14 @@
       <div class="map-jumbo d-flex flex-column">
         <img src="../img/map.png" alt="">
         <div class="output">
-          <h5 v-if="nameStr.length">Il tuo nome è: <span class="text-secondary">
-            {{nameStr}}</span></h5>
-          <h5 v-if="emailStr.length">La tua mail è: <span class="text-secondary">
-            {{emailStr}}</span></h5>
-          <h5 v-if="subjectStr.length">Oggetto: <span class="text-secondary">
-            {{subjectStr}}</span></h5>
-          <h5 v-if="messageStr.length">Il tuo messaggio: <span class="text-secondary">
-            {{messageStr}}</span></h5>
+          <h5 v-if="nameOut.length">Il tuo nome è: <span class="text-secondary">
+            {{nameOut}}</span></h5>
+          <h5 v-if="emailOut.length">La tua mail è: <span class="text-secondary">
+            {{emailOut}}</span></h5>
+          <h5 v-if="subjectOut.length">Oggetto: <span class="text-secondary">
+            {{subjectOut}}</span></h5>
+          <h5 v-if="messageOut.length">Il tuo messaggio: <span class="text-secondary">
+            {{messageOut}}</span></h5>
         </div>
       </div>
       <div class="contact-div d-flex flex-column justify-content-start
@@ -74,11 +74,19 @@ export default {
       emailStr: '',
       subjectStr: '',
       messageStr: '',
+      nameOut: '',
+      emailOut: '',
+      subjectOut: '',
+      messageOut: '',
     };
   },
   methods: {
     print() {
       console.log(this.nameStr, this.emailStr, this.subjectStr, this.messageStr);
+      this.nameOut = this.nameStr;
+      this.emailOut = this.emailStr;
+      this.subjectOut = this.subjectStr;
+      this.messageOut = this.messageStr;
     },
   },
 };
